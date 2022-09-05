@@ -1,12 +1,16 @@
+import React from "react"
+import Home from "../views/Home"
+import About from "../views/About"
+
 export default [
   {
     path: '/',
     name: 'home',
-    component: '@/views/Home'
+    component: <Home />
   },
   {
     path: '/about',
     name: 'about',
-    component: '@/views/About'
+    component: <About />
   }
 ]

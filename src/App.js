@@ -1,9 +1,6 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from 'react-router-dom';
 import route from './router/config'
-import Home from '@/views/Home'
-import asyncWidget from './router/asyncWidget'
-
 const Bundle = (props) => {
   const [component, setComponent] = useState(null)
 

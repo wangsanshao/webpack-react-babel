@@ -1,7 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'
+import App from './App'
 
-const App = () => {
-  return <h1>这是一个h1</h1>
-}
-createRoot(document.getElementById('app')).render(<App />)
+
+const root = createRoot(document.getElementById('app'))
+root.render(<React.StrictMode>
+  <HashRouter>
+    <App />
+  </HashRouter>
+</React.StrictMode>)
